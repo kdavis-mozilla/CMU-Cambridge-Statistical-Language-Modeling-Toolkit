@@ -34,7 +34,7 @@ results obtained from use of this software.
 #include <stdio.h>
 #include "general.h"
 #include "strings.h"
-char  RRo_is_Z[100];
+char  RRo_is_Z[4096];
 
 FILE *rr_oopen(char *path)
 {
