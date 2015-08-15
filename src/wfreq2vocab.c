@@ -79,7 +79,7 @@ void main(int argc, char *argv[]) {
   int num_to_output;
   int i;
   word_rec *records;
-  char temp_word[750];
+  char temp_word[7500];
   flag gt_set;
   flag top_set;
 
