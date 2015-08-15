@@ -29,7 +29,7 @@ results obtained from use of this software.
 #include "rr_libs/general.h"
 #include "pc_libs/pc_general.h"
 
-#define MAX_STRING_LENGTH 501
+#define MAX_STRING_LENGTH 5001
 #define DEFAULT_HASH 1000000
 
 struct node {
@@ -195,8 +195,8 @@ int main( int argc, char **argv )
 
   hash_size = nearest_prime( init_nwords );
   new_hashtable( &vocab, hash_size );
-  while( (scanrc = scanf( "%500s", word )) == 1 ) {
-    if ( strlen( word ) >= 500 ) {
+  while( (scanrc = scanf( "%5000s", word )) == 1 ) {
+    if ( strlen( word ) >= 5000 ) {
       pc_message(verbosity,1,"text2wfreq : WARNING: word too long, will be split: %s...\n",word);
     }
     if (strlen(word)) {
